@@ -1,4 +1,4 @@
-import re
+﻿import re
 import time
 import requests
 import selenium
@@ -36,14 +36,12 @@ def login():
 
     time.sleep(2)
     name = driver.find_element_by_xpath('//input[@name="TPL_username"]')
-    name.send_keys("cover")
-    time.sleep(2)
-    name.send_keys("moon")
+    name.send_keys("XXX")
 
     time.sleep(1)
 
     password = driver.find_element_by_xpath('//input[@name="TPL_password"]')
-    password.send_keys("1989edward0331lee")
+    password.send_keys("XXX")
 
     wait.until(
         EC.presence_of_element_located((By.XPATH, '//div[@class="nc_scale"]//span[@class="nc_iconfont btn_slide"]')))
